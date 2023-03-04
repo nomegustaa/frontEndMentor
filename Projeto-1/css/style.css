@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    background: hsl(216, 12%, 8%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sem serifa;
+}
+.container-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-popUp, .container-result{
+    background: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+.hidden{
+    display: none;
+}
+
+.container-context{
+    padding: 30px;
+}
+
+.container-context img{
+    /* border: 1px solid black; */
+    padding: 15px;
+    border-radius: 50%;
+    background: hsl(216, 12%, 22%);
+}
+
+.container-context h1, .result-context h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.container-context p, .container-numbers, .resultText {
+    color: hsl(216, 12%, 54%);
+}
+
+.container-numbers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-numbers span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background: hsl(216, 12%, 22%);
+    cursor: pointer;
+    transition: .2s;
+}
+.container-numbers span:hover{
+    background: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container-numbers span.ativo{
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container-btn{
+    margin: 30px 0 0 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sem serifa;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container-btn:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+
+.result-context{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.result-context img{
+    margin: 35px 0 0 0;
+}
+
+.resultP{
+    padding: 5px 20px;
+    border-radius: 25px;
+    background: hsl(216, 12%, 22%);
+    color: hsl(25, 97%, 53%);
+}
+
+.resultText{
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    .container-popUp, .container-result{
+        width: 90%;
+    }
+}
