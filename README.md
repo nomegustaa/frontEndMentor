@@ -4,5 +4,5 @@
 
 | Projetos | Imagens |
 | ------------- | ------------- |
-| <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-1/" target="blank">Classificação interativa</a>  | <img src="https://github.com/nomegustaa/frontEndMentor/blob/main/Projeto-1/design/desktop-design.jpg" width="500px"> |
-| <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-2/" target="blank">Artigo interativo</a>  | <img src="https://github.com/nomegustaa/frontEndMentor/blob/main/Projeto-2/design/desktop-design.jpg" width="500px">">  |
+| <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-1/" target="blank">Classificação interativa</a>  | <img src="Projeto-1/design/desktop-design.jpg" width="500px"> |
+| <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-2/" target="blank">Artigo interativo</a>  | <img src="Projeto-2/design/desktop-active-state.jpg" width="500px">">  |
