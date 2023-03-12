@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assests/icons/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <img src="./assests/images/bg-pattern-desktop.svg" alt="image-woman" class="image-background">
+    <header>
+        <img src="./assests/icons/logo.svg" class="logo" alt="logo">
+    </header>
+    <main>
+        <div class="image-mobile"></div>
+        <section class="container-context">
+            <h1> <span class="titulo-background">We're</span> coming soon</h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form name="email">
+                <input type="email" name="email" id="email" placeholder="Email Addres" required data-input>
+                <div class="icon-box">
+                    <img src="./assests/icons/icon-arrow.svg" alt="arrow" class="icon-arrow" data-submit>
+                </div>
+                <div class="icon-box-error" data-icon-error>
+                    <img src="./assests/icons/icon-error.svg" class="icon-error" alt="icon-error">
+                </div>
+            </form>
+            <span data-error class="error-message">Please provide a valid email</span>
+        </section>
+        <img src="./assests/images/hero-desktop.jpg" alt="image-woman" class="image-woman">
+    </main>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
