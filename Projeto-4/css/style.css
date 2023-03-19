@@ -27,7 +27,6 @@ main{
     font-family: 'Poppins', sans-serif;
     width: 500px;
 }
-
 .description-buy {
     width: 440px;
     background: hsl(248, 32%, 49%);
@@ -35,21 +34,14 @@ main{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    /* Não esquecer da sombra */
     border-radius: 5px;
 }
-/* .container-form{
-    width: 25%;
-    padding: 35px;
-} */
 .form-background{
     width: 470px;
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
-    /* Não esquecer da sombra */
 }
-
 form{
     display: flex;
     flex-direction: column;
@@ -70,7 +62,6 @@ form{
 input.borderError{
     border: 1px solid hsl(0, 100%, 74%) ;
 }
-
 input{
     margin: 10px 0;
     padding: 15px;
@@ -78,7 +69,6 @@ input{
     outline: none;
     border: 2px solid rgb(201, 201, 201);
 }
-
 .icon-error.active{
     background-image: url(../assests/icon/icon-error.svg);
     background-repeat: no-repeat;
@@ -88,11 +78,9 @@ input{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-
 input[type="email"].active::placeholder{
     color: hsl(0, 100%, 74%) ;
 }
-
 input[type="button"]{
     background-color: hsl(154, 59%, 51%);
     border: none;
@@ -106,7 +94,6 @@ input[type="button"]{
     text-align: center;
     width: 86%;
 }
-
 .description-text{
     display: flex;
     justify-content: center;
@@ -114,17 +101,14 @@ input[type="button"]{
     font-size: 12px;
     color: hsl(246, 25%, 77%);
 }
-
 .p-description{
     padding: 0 2px;
     margin: 15px 0 25px 0;
 }
-
 .description-color{
     color: hsl(0, 100%, 74%) ;
     font-weight: bold;
 }
-
 @media(max-width: 1024px){
     .container-context h1{
         font-size: 36px;
@@ -144,7 +128,6 @@ input[type="button"]{
         margin: 0 0px 0 25px;
     }
 }
-
 @media(max-width: 800px){
     main{
         flex-direction: column;
@@ -168,7 +151,6 @@ input[type="button"]{
         margin: 0;
     }
 }
-
 @media (max-width: 500px){
     .container-context{
         margin: 0 20px;
