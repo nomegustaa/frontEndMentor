@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornulário</title>
+    <link rel="shortcut icon" href="./assests/icon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="container-context">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. </p>
+        </section>
+        <section class="container-form">
+            <p class="description-buy"><b> Try it free 7 days</b> then $20/mo. thereafter</p>
+            <div class="form-background">
+                <form id="form" name="formulario">
+                    <input type="text" name="name" class="icon-error" id="name" placeholder="First Name" required>
+                    <span class="error">Fist Name cannot be empty</span>
+                    <input type="text" name="lastName" class="icon-error" id="lastName" placeholder="Last Name" required>
+                    <span class="error">Last Name cannot be empty</span>
+                    <input type="email" name="email" data-email class="icon-error" id="email" placeholder="Email Address" required>
+                    <span class="error">Look like this is not an email</span>
+                    <input type="password" name="password" class="icon-error" id="password" placeholder="Password" required>
+                    <span class="error">Password cannot be empty</span>
+                </form>
+                <input type="button" value="Claim your free trial" class="btnSubmit">
+                <div class="description-text">
+                    <p class="p-description">By clicking the button, you are agreeing to our 
+                    <span class="description-color">  Terms and Services</span>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
