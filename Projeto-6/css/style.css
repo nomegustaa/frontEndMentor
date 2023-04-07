@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 85rem;
+}
+.image-background{
+    background-image: url(../assests/images/bg-main-desktop.png);
+    background-size: 450px 100% ;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 100vh;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.card-front{
+    background-image: url(../assests/icons/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    margin: 0 0 0 120px;
+}
+.card-front-content{
+    padding: 30px;
+}
+.card-front-name{
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-front-name{
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-front-number{
+    line-height: 2px;
+}
+.card-number{
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin: 5rem 0 0 0;
+}
+.card-front-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+}
+.card-front-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+}
+.card-front-dates{
+    display: flex;
+}
+.card-front-dates p{
+    max-width: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-back{
+    background-image: url(../assests/icons/bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    margin: 0 0 0 220px;
+}
+.card-back-content{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.card-back-content p{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0 55px 0 0;
+    max-width: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.form-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25px 0 0;
+}
+.form-all.disable{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 5px 0;
+}
+.form input{
+    width: 350px;
+    padding: 15px 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+.form input::placeholder{
+    font-family: 'Space Grotesk', sans-serif;
+    color: hsl(270, 3%, 87%);
+    font-size: 16px;
+}
+.form-date-all{
+    display: flex;
+    justify-content: space-between;
+}
+.exp-date-inputs input{
+    width: 70px;
+}
+.form-date-label{
+    display: flex;
+    flex-direction: column;
+}
+.form-date-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-date-input input{
+    width: 150px;
+}
+.btn{
+    padding: 10px 5px;
+    border: none;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.btn-success{
+    padding: 10px 5px;
+    border: none;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.error{
+    color: hsl(0, 100%, 66%);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    display: none;
+}
+.error.active{
+    display: inline
+}
+form input.errorBorder{
+    border: 1px solid hsl(0, 100%, 66%);
+    outline: none;
+}
+.form-all-success.active{
+    display: none;
+}
+.form-all-success{
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+}
+.form-all-success-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1080px){
+    .image-background{
+        background-size: 325px 100%;
+    }
+    .card-front{
+        margin: 0 0 0 30px;
+    }
+    .card-back{
+        margin: 0 0 0 55px;
+    }
+}
+@media (max-width: 960px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .image-background{
+        width: auto;
+        background-size: 100% 265px;
+    }
+    .cards{
+        align-items: center;
+        justify-content: start;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .card-front{
+        margin: 0px 60px 0 0px;
+        width: 300px;
+        height: 164px;
+        background-size: 100%;
+    }
+    .card-front-name{
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .icon-card-front{
+        width: 50px;
+    }
+    .card-back{
+        margin: 50px 0 0 60px;
+        width: 300px;
+        height: 163px;
+        background-size: 300px;
+    }
+    .card-number{
+        margin: 25px 0;
+        font-size: 17px;
+    }
+    .card-front-content{
+        padding: 15px;
+    }
+    .form{
+        width: 100%;
+    }
+    .form-all{
+        margin: 0;
+        padding: 0 25px;
+    }
+
+    .form-date-all{
+        justify-content: space-between;
+    }
+    .form input{
+        width: auto;
+    }
+
+    .exp-date-inputs input{
+        width: 50px;
+    }
+
+    .form-all-success{
+        width: 100%;
+        align-items: center;
+    }
+    .form-all-success-content img{
+        width: 50%;
+    }
+    .btn-success{
+        width: 40%;
+    }
+}
+@media (max-width: 500px){
+    .card-back{
+        margin: 50px 0 0 0;
+    }
+    .card-front{
+        margin: 0px;
+    }
+    .form label{
+        font-size: 12px;
+    }
+    input[name='cvc'] {
+        width: 80px;
+    }
+    .btn-success{
+        width: 90%;
+    }
+}

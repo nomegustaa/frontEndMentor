@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de cartão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assests/icons/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="image-background cards">
+            <div class="card-front">
+                <div class="card-front-content">
+                    <img src="assests/icons/card-logo.svg" alt="icon-card" class="icon-card-front">
+                    <p class="card-number" data-card="number">0000 0000 0000 0000</p>
+                    <div class="card-front-information">
+                        <p data-card="name" class="card-front-name">Jane Appleseed</p>
+                        <div class="card-front-dates">
+                            <p data-card="date_mes">00</p>
+                            <p data-card="date_ano">/00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back card-back-content">
+                <p data-card="numberCard">000</p>  
+            </div>
+        </div>
+        <section class="form-all">
+            <form name="form" class="form">
+                <label for="name">Cardholder Name</label>
+                <input type="text" name="name" id="name" data-input-name placeholder="e.g. Jane Appleseed">
+                <span class="error">Wrong format, name only</span>
+                <label for="card-number-label">Card Number</label>
+                <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+                <span class="error">Wrong format, numbers only</span>
+                <div class="form-date-all">
+                    <div class="form-date-label">
+                        <label for="exp-date">Exp. Date (MM/YY)</label>
+                        <div class="exp-date-inputs">
+                            <input type="text" name="exp-date" id="exp-date" placeholder="MM" >
+                            <input type="text" name="exp-date" id="exp-date" placeholder="YY">
+                        </div>
+                        <span class="error">Can't be blank</span>
+                    </div>
+                    <div class="form-date-input">
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+                        <span class="error">Can't be blank</span>
+                    </div>
+                </div>
+            </form>
+            <button data-confirm class="btn">Confirm</button>
+        </section>
+        <section class="form-all-success active">
+            <div class="form-all-success-content">
+                <img src="./assests/icons/icon-complete.svg" alt="icon-complete" width="25%">
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+            </div>
+            <button class="btn-success" data-btn-continue>Continue</button>
+        </section>
+    </main>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
