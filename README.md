@@ -9,3 +9,4 @@
 | <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-3/" target="blank">Base apparel</a>  | <img src="Projeto-3/design/active-states.jpg" width="500px">  |
 | <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-4/" target="blank">Form validate</a>  | <img src="Projeto-4/design/desktop-design.jpg" width="500px">  |
 | <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-5/" target="blank">Advice random</a>  | <img src="Projeto-5/design/active-states.jpg" width="500px">  |
+| <a href="https://nomegustaa.github.io/frontEndMentor/Projeto-6/" target="blank">Validate card</a>  | <img src="Projeto-6/design/desktop-design.jpg" width="500px">  |
